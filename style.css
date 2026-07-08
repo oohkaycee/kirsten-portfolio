@@ -44,3 +44,7 @@ button {
 button:hover {
     background: #333;
 }
+.profile-pic {
+    width: 150px;
+    border-radius: 16%;
+}
