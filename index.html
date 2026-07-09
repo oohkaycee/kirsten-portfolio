@@ -5,38 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kirsten's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
+<nav>
+    <div class="logo">KIRSTEN CAROLYN</div>
 
-<div class="hero-content">
-    <h1>Hello, I'm Kirsten!</h1>
-    <img src="images/profile.jpg" alt="Kirsten" class="profile-pic">
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-    <p class="tagline">Creative communicator • Fashion enthusiast • Learning AI • Web development</p>
-    <button>View My Work</button>
+<div class="hero">
+
+    <div class="hero-text">
+
+        <h1>
+            Creative communicator building at the intersection of fashion, technology, and design.
+        </h1>
+
+        <p class="tagline">
+            Fashion • Photography • AI • Web Development
+        </p>
+
+        <button>View Projects → </button>
+
+    </div>
+
+    <img class="profile-pic"
+         src="images/profile.jpg"
+         alt="Kirsten">
+
 </div>
 
-
-    <h2>About Me</h2>
+    <h2 id="about">About Me</h2>
     <p>I'm a creative communicator with a passion for fashion and technology. I'm currently learning about AI and web development to expand my skill set and create innovative solutions.</p>
 
-    <h2>Favourite Brands</h2>
-    <ul>
-        <li>Acne Studios</li>
-        <li>Arc'teryx</li>
-        <li>Stussy</li>
-        <li>Tom Wood</li>
-        <li>Uniqlo</li>
-        <li>Vivienne Westwood</li>
-    </ul>
+<h2 id="projects">Projects</h2>
 
-    <h2>Current Goals</h2>
-    <ul>
-        <li>Learn more about AI and web development.</li>
-        <li>Improve my design skills.</li>
-        <li>Build a personal website to showcase my work.</li>
-    </ul>
+<div class="projects-grid">
+
+   <div class="project-card">
+    <h3>Personal Portfolio Website</h3>
+
+    <p>
+        My first website built using HTML, CSS, Git, GitHub, and GitHub Pages.
+    </p>
+
+    <p class="tools">
+        HTML • CSS • Git • GitHub Pages
+    </p>
+
+    <a class="project-link"
+       href="https://oohkaycee.github.io/kirsten-portfolio/"
+       target="_blank">
+        View Project →
+    </a>
+</div>
+
+    <div class="project-card">
+    <h3>Future Fashion App (Coming Soon)</h3>
+
+    <p>
+        A future project focused on outfit planning and wardrobe organization.
+    </p>
+
+    <p class="tools">
+        UI Design • Fashion • Coming Soon
+    </p>
+
+    <a class="project-link" href="#">
+        Coming Soon →
+    </a>
+</div>
+</div>
+
+<h2>Currently Learning</h2>
+
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Git & GitHub</li>
+    <li>Web Design</li>
+</ul>
+
+   <h2 id="contact">Contact</h2>
+
+<p>Email: Coming Soon</p>
+
+<p>
+    <a href="https://github.com/oohkaycee">
+        GitHub
+    </a>
+</p>
+
+<footer>
+    <p>© 2026 Kirsten Carolyn</p>
+</footer>
+
 </body>
 
 </html>

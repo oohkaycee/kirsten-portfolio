@@ -1,12 +1,12 @@
 body {
     background-color: #f5f5f5;
     color: #222;
-    font-family: Arial, sans-serif;
+    font-family: "Manrope", sans-serif;
     margin: 60px;
 }
 
 h1 {
-    font-size: 56px;
+    font-size: 5px;
 }
 
 h2, h3, h4 {
@@ -21,14 +21,22 @@ li {
     margin-bottom: 8px;
 }
 .hero {
-    text-align: center;
-    margin-top: 120px;
-    margin-bottom: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+
+    margin: 120px 0;
+}
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
 }
 
 .tagline {
-    font-size: 22px;
-    color: gray;
+    font-size: 18px;
+    color: #777;
 }
 
 button {
@@ -39,13 +47,15 @@ button {
     border-radius: 8px;
     font-size: 16px;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 
 button:hover {
     background: #333;
+    transform: translateY(-2px);
 }
 .profile-pic {
-    width: 150px;
+    width: 285px;
     border: 5px solid black;
     border-radius: 15%;
 }
@@ -60,11 +70,146 @@ body {
     margin: auto;
     padding: 40px;
 }h1 {
-    font-size: 6rem;
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+h2 {
+    font-size: 2rem;
+    margin-top: 80px;
 }
 p {
     line-height: 1.6;
 }
 button:hover {
     transform: scale(1.05);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+.project-card {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+.project-card {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+.project-card {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.3s ease;
+}
+body {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px;
+}
+section {
+    margin-bottom: 100px;
+}
+button {
+    padding: 12px 24px;
+    border-radius: 999px;
+    border: 1px solid white;
+    background: black;
+    cursor: pointer;
+}
+button:hover {
+    transform: translateY(-2px);
+}
+nav {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.tagline {
+    font-size: 1.2rem;
+    max-width: 500px;
+}
+.hero {
+    padding: 90px 0 120px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+.tools {
+    margin-top: 18px;
+    color: #777;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 18px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.project-link:hover {
+    color: #666;
+}
+section {
+    margin-bottom: 90px;
+}
+.project-card {
+    min-height: 180px;
+}
+a {
+    color: black;
+}
+
+a:hover {
+    color: #777;
+}
+footer {
+    margin-top: 100px;
+    padding-top: 30px;
+    border-top: 1px solid #ddd;
+    color: #777;
 }
