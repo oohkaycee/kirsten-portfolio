@@ -46,5 +46,25 @@ button:hover {
 }
 .profile-pic {
     width: 150px;
-    border-radius: 16%;
+    border: 5px solid black;
+    border-radius: 15%;
+}
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
+}h1 {
+    font-size: 6rem;
+}
+p {
+    line-height: 1.6;
+}
+button:hover {
+    transform: scale(1.05);
 }
