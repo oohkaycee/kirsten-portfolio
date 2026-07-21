@@ -28,7 +28,7 @@
 
     <img
         class="profile-pic"
-        src="images/profile.jpg"
+        src="images/hero.jpg"
         alt="Kirsten">
 
     <p class="tagline">
@@ -40,44 +40,85 @@
 </a>
 </section>
 <section id="selected-work" class="selected-work">
+
     <div class="section-heading">
-        <p>Selected Work</p>
+        <p>Selected Projects</p>
         <span>2026</span>
     </div>
 
-    <a href="work.html" class="work-item">
-        <span class="work-number">01</span>
+    <div class="work-slider">
 
-        <div class="work-info">
-            <h2>Photography</h2>
-            <p>Personal images and visual storytelling.</p>
-        </div>
+        <article class="work-slide active">
+            <div class="work-copy">
+                <h2>Photography</h2>
+                <p>
+                    Travel, lifestyle, and everyday moments.
+                </p>
 
-        <span class="work-arrow">↗</span>
-    </a>
+                <a href="work.html" class="project-link">
+                    View Project
+                </a>
+            </div>
 
-    <a href="work.html" class="work-item">
-        <span class="work-number">02</span>
+            <div class="work-visual">
+                <img
+                    src="images/photo.jpg"
+                    alt="Photography project preview"
+                >
+            </div>
+        </article>
 
-        <div class="work-info">
-            <h2>Personal Portfolio</h2>
-            <p>Design and development using HTML and CSS.</p>
-        </div>
+        <article class="work-slide">
+            <div class="work-copy">
+                <h2>Creative Archive</h2>
+                <p>
+                   Design explorations and visual inspiration.
+                </p>
 
-        <span class="work-arrow">↗</span>
-    </a>
+                <a href="work.html" class="project-link">
+                    View Project
+                </a>
+            </div>
 
-    <div class="work-item work-item-disabled">
-        <span class="work-number">03</span>
+            <div class="work-visual work-placeholder">
+                Moodboard
+            </div>
+        </article>
 
-        <div class="work-info">
-            <h2>Creative Project</h2>
-            <p>Coming soon.</p>
-        </div>
+        <article class="work-slide">
+            <div class="work-copy">
+                <h2>Film</h2>
+                <p>Cinematic videos and visual storytelling.</p>
+            </div>
 
-        <span class="work-arrow">—</span>
+            <div class="work-visual work-placeholder">
+                Coming Soon
+            </div>
+        </article>
+
     </div>
+
+    <div class="slider-controls">
+        <button class="slider-button slider-button-prev" id="prev-slide">
+    ←
+</button>
+
+<button class="slider-button slider-button-next" id="next-slide">
+    →
+</button>
+
+</article>
+
+<div class="slider-controls">
+    <div class="slider-count">
+        <span id="current-slide">01</span>
+        <span>/</span>
+        <span>03</span>
+    </div>
+</div>
+
 </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
