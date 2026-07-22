@@ -116,25 +116,33 @@ li {
     font-size: 18px;
     color: var(--gray);
 }
-.visual-link {
+.scroll-cue {
     display: inline-block;
-    margin-top: 28px;
+    margin-top: 30px;
 
     color: var(--text);
     text-decoration: none;
-
-    font-size: 1.2rem;
+    cursor: pointer;
+}
+.visual-label {
+    margin-top: 30px;
+    font-size: 1.05rem;
     font-weight: 800;
-    letter-spacing: 0.22em;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--text);
+}
+.scroll-text {
+    font-size: 1.05rem;
+    font-weight: 800;
+    letter-spacing: 0.24em;
     text-transform: uppercase;
 
-    transition: opacity 0.3s ease,
-                letter-spacing 0.3s ease;
+    transition: opacity .25s ease;
 }
 
-.visual-link:hover {
-    opacity: 0.65;
-    letter-spacing: 0.28em;
+.scroll-cue:hover .scroll-text {
+    opacity: .65;
 }
 /* Selected Work */
 .selected-work {
@@ -441,7 +449,51 @@ footer {
     border-top: 1px solid var(--border);
     color: var(--gray);
 }
+/* ABOUT PAGE */
 
+.simple-about {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: flex-start;
+    padding-top: 100px;
+}
+
+.about-photo {
+    width: 300px;
+    height: 370px;
+    display: block;
+
+    object-fit: cover;
+    object-position: center 25%;
+
+    border-radius: 16px;
+}
+
+.about-intro {
+    width: 100%;
+    max-width: 420px;
+    margin-top: 32px;
+
+    text-align: center;
+}
+
+.about-intro p {
+    margin: 0 0 18px;
+
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+.about-intro p:last-child {
+    margin-bottom: 0;
+}
+
+.about-intro strong {
+    font-weight: 800;
+}
 @media (max-width: 768px) {
     body {
         padding: 20px;
@@ -565,5 +617,23 @@ footer {
 
 .slider-controls {
     padding-top: 18px;
+}
+.simple-about {
+    min-height: auto;
+    padding: 60px 24px 90px;
+}
+
+.about-photo {
+    width: 230px;
+    height: 290px;
+}
+
+.about-intro {
+    max-width: 320px;
+    margin-top: 28px;
+}
+
+.about-intro br {
+    display: none;
 }
 }
